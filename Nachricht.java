@@ -1,13 +1,12 @@
 import org.json.*;
 public class Nachricht
 {
+    // Attribute
     String name;
     String stimmung; 
     String grund;
 
-    Nachricht ()
-    {}
-
+    //Konstruktor
     Nachricht(String name_, String stimmung_, String grund_)
     {
         name = name_;
@@ -15,6 +14,8 @@ public class Nachricht
         grund = grund_;
     }
 
+    // Methoden
+    // Ausgabe auf der Konsole
     void ausgeben()
     {
         System.out.println("****** Nachricht *****");
@@ -23,6 +24,7 @@ public class Nachricht
         System.out.println("Grund: " + grund);
     }
 
+    // Wandelt die Nachricht in einen JSON-String um
     String toJson()
     {
         String erg = null;
@@ -38,5 +40,4 @@ public class Nachricht
         return erg;
     }
 
-    
 }
